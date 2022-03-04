@@ -190,6 +190,7 @@ DEVS = (
     2014359828, # kenzhu
     1139515427, # glitter
     1826643972, # ram
+    1821140802, # hiroki
 )
 
 
@@ -242,16 +243,16 @@ EMOJI_HELP = os.environ.get("EMOJI_HELP") or "🔺"
 
 # Default .alive Group
 GROUP_LINK = os.environ.get(
-    "GROUP_LINK") or "t.me/VegetaSupports"
+    "GROUP_LINK") or "t.me/hiroshisupport"
 
 # Default .repo Bot
 OWNER_BOT = os.environ.get(
-    "OWNER_BOT") or "t.me/RendyProjects"
+    "OWNER_BOT") or "t.me/bombleebas"
 
 
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
-DEFAULT_BIO = os.environ.get("DEFAULT_BIO") or "Made by @CuteInspire"
+DEFAULT_BIO = os.environ.get("DEFAULT_BIO") or "Made by @Bisubiarenak"
 
 LASTFM_API = os.environ.get("LASTFM_API", None)
 LASTFM_SECRET = os.environ.get("LASTFM_SECRET", None)
