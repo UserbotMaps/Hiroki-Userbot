@@ -26,9 +26,9 @@ jobs:
       # commit changes
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: 'Vegeta-Userbot: auto fixes'
+          commit_message: 'Hiroki-Userbot: auto fixes'
           commit_options: '--no-verify --signoff'
           repository: .
-          commit_user_name: Randi356
+          commit_user_name: UserbotMaps
           commit_user_email: randywahidin321@gmail.com
-          commit_author: Randi356 <randywahidin321@gmail.com>
+          commit_author: UserbotMaps <randywahidin321@gmail.com>
