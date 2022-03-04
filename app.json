@@ -1,6 +1,6 @@
 {
-  "name": "VEGETA-USERBOT",
-  "description": "[VEGETA-USERBOT] USERBOT KHUSUS YANG DIGUNAKAN UNTUK BERSENANG-SENANG DI TELEGRAM.",
+  "name": "HIROKI-USERBOT",
+  "description": "[HIROKI-USERBOT] USERBOT KHUSUS YANG DIGUNAKAN UNTUK BERSENANG-SENANG DI TELEGRAM.",
   "logo": "https://telegra.ph/file/38b588acea66a3e4c43f7.jpg",
   "keywords": [
     "telegram",
@@ -9,7 +9,7 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/Randi356/Vegeta-Userbot",
+  "repository": "https://github.com/UserbotMaps/Hiroki-Userbot",
   "telegram": "https://t.me/rencprx",
   "success_url": "https://t.me/VegetaSupports",
   "stack": "container",
@@ -42,12 +42,12 @@
     },
     "ALIVE_NAME": {
       "description": "Nama untuk menunjukan pesan .alive",
-      "value": "Vegeta-Userbot",
+      "value": "Hikori-Userbot",
       "required": true
     },
     "S_PACK_NAME": {
       "description": "Nama Sticker Pack Mu",
-      "value": "Made by @rencprx",
+      "value": "Made by hikori",
       "required": false
     },
     "BOT_TOKEN": {
