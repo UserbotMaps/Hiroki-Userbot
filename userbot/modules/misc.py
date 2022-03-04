@@ -19,7 +19,7 @@ from PIL import Image
 # ================= CONSTANT =================
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 REPOLINK = str(
-    UPSTREAM_REPO_URL) if UPSTREAM_REPO_URL else "https://github.com/Randi356/RendyCoders"
+    UPSTREAM_REPO_URL) if UPSTREAM_REPO_URL else "https://github.com/Randi356/Vegeta-Userbot"
 # ============================================
 
 opener = urllib.request.build_opener()
@@ -87,7 +87,7 @@ async def killdabot(event):
 async def reedme(e):
     await e.edit(
         "Here's Something for You to Read :\n"
-        "\n[❄️ Vegeta-Userbot Repo](https://github.com/Randi356/Vegeta-Old/blob/DEVS/README.md)"
+        "\n[❄️ Vegeta-Userbot Repo](https://github.com/Randi356/Vegeta-Userbot/blob/Vegeta-Userbot/README.md)"
         "\n[❄️Setup Guide - Basic](https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02)"
         "\n[❄️Special - Note](https://telegra.ph/Special-Note-11-02)")
 
@@ -110,13 +110,13 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
-        "**Hey**, I am using **🌸Vegeta-Userbot🌸** \n"
+        "**Hey**, I am using **🌸Hiroki-Userbot🌸** \n"
         "❄️━━━━━━━━━━━━━━━━━━━━━━卍\n"
-        "⇼ **Repo Userbot :** [Repo](https://github.com/Randi356/Vegeta-Old)\n"
-        "⇼ **Owner Bot       :** [Rendy](t.me/CuteInspire)\n"
+        "⇼ **Repo Userbot :** [Repo](https://github.com/UserbotMaps/Hiroki-Userbot)\n"
+        "⇼ **Owner Bot       :** [Hiroshi](t.me/Bisubiarenak)\n"
         "❄️━━━━━━━━━━━━━━━━━━━━━━卍\n"
         "⇼ **Instagram       :** [instagram](instagram.com/yotteno)\n"
-        "⇼ **Support           :** [Channel](https://t.me/RendyProjects)\n"
+        "⇼ **Support           :** [Channel](https://t.me/bombleebas)\n"
         "❄️━━━━━━━━━━━━━━━━━━━━━━卍\n"
     )
 
@@ -276,13 +276,13 @@ CMD_HELP.update({
     \n↳ : Dapatkan item acak dari daftar item.",
     "sleep": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.sleep <seconds>`\
     \n↳ : `.sleep`\
-    \n  •  **Function : Biarkan Vegeta-Userbot tidur selama beberapa detik.",
+    \n  •  **Function : Biarkan Hiroki-Userbot tidur selama beberapa detik.",
     "shutdown": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.shutdown`\
     \n↳ : Mematikan bot",
     "repo": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.repo`\
-    \n↳ : Menampilan link Repository Vegeta-Userbot.",
+    \n↳ : Menampilan link Repository Hiroki-Userbot.",
     "string": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.string`\
-    \n↳: Menampilkan link String Vegeta-Userbot",
+    \n↳: Menampilkan link String Hiroki-Userbot",
     "readme": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙 `.readme`\
     \n↳ : Menyediakan tautan untuk mengatur userbot dan modulnya.",
     "repeat": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.repeat <no> <text>`\
