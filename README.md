@@ -1,4 +1,4 @@
-# Vegeta-Userbot
+# **Hiroko-Userbot**
 Userbot Telegram yang di buat untuk bersenang senang
 
 
@@ -12,14 +12,14 @@ Userbot Telegram yang di buat untuk bersenang senang
 ```
 
 <p align="center">
-  <img src="https://telegra.ph/file/38b588acea66a3e4c43f7.jpg">
+  <img src="https://telegra.ph/file/c262a37b7fbf7ffa663d4.jpg">
 </p>
 
 
-# Heroku vegeta deploy
+# Heroku hiroki deploy
   
   
-  <p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Randi356/Vegeta-Userbot">
+  <p align="center"><a href="https://heroku.com/deploy?template=https://github.com/UserbotMaps/Hiroki-Userbot">
   <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-green?style=flat&logo=heroku" width="325" height="50.100" /></a></p>
   
  # Deploy via Bot
