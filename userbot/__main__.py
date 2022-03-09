@@ -9,14 +9,29 @@ import sys
 from importlib import import_module
 
 from telethon.tl.functions.channels import InviteToChannelRequest
-from userbot import ALIVE_NAME, BOT_USERNAME, BOT_VER, BOTLOG_CHATID, LOGS, UPSTREAM_REPO_BRANCH, bot
+from userbot import ALIVE_NAME, BOT_USERNAME, BOT_VER, BOTLOG_CHATID, LOGS, UPSTREAM_REPO_BRANCH, Hiroblacklist, bot
 from userbot.modules import ALL_MODULES
 from userbot.utils.tools import hadeh_ajg
 try:
-    for module_name in ALL_MODULES:
+    bot.start()
+    user = bot.get_me()
+    Hiroblacklist = requests.get(
+        "https://raw.githubusercontent.com/UserbotMaps/hiroblack/master/Hiroblacklist.json"
+    ).json()
+    if user.id in Hiroblacklist:
+        LOGS.warning(
+            "MAKANYA GA USAH BERTINGKAH GOBLOK, USERBOTnya GUA MATIIN NAJIS BANGET DIPAKE ORANG KEK LU.\nCredits: @Bisubiarenak"
+        )
+        sys.exit(1)
+except Exception as e:
+    LOGS.info(str(e), exc_info=True)
+    sys.exit(1)
+
+for module_name in ALL_MODULES:
         imported_module = import_module("userbot.modules." + module_name)
     bot.start()
-    LOGS.info(f"⚡Vegeta-Userbot⚡ ⚙️ V{BOT_VER} [ TELAH DIAKTIFKAN! ]")
+    LOGS.info(f"Jika {ALIVE_NAME} Membutuhkan Bantuan, Silahkan Tanyakan di Grup https://t.me/hiroshisupport")
+    LOGS.info(f"⚡Hiroshi-Userbot⚡ ⚙️ V{BOT_VER} [ TELAH DIAKTIFKAN! ]")
 except BaseException as e:
     LOGS.info(str(e), exc_info=True)
     sys.exit(1)
@@ -27,7 +42,7 @@ async def vegeta_ubot_on():
         if BOTLOG_CHATID != 0:
             await bot.send_message(
                 BOTLOG_CHATID,
-                f"🔥 Vegeta-Userbot Berhasil Diaktfikan 🔥\n╼┅━━━━━╍━━━━━┅╾\n❍▹ Bot Of : {ALIVE_NAME}\n❍▹ BotVer : {BOT_VER}@{UPSTREAM_REPO_BRANCH}\n╼┅━━━━━╍━━━━━┅╾",
+                f"🔥 **Hiroshi Userbot Berhasil Diaktifkan**!!\n━━━━━━━━━━━━━━━\n➠ **Userbot Version** - 9.1@Hiroshi-Userbot\n➠ **Ketik** `.ping` **Untuk Mengecheck Bot**\n━━━━━━━━━━━━━━━\n➠ **Powered By:** @bombleebas",
             )
     except Exception as e:
         LOGS.info(str(e))
