@@ -68,6 +68,9 @@ if CONFIG_CHECK:
     )
     quit(1)
 
+SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "").split()}
+BL_CHAT = {int(x) for x in os.environ.get("BL_CHAT", "").split()}
+
 # Telegram App KEY and HASH
 API_KEY = os.environ.get("API_KEY", "")
 API_HASH = os.environ.get("API_HASH", "")
@@ -81,6 +84,9 @@ BOTLOG_CHATID = int(os.environ.get("BOTLOG_CHATID", ""))
 # Userbot logging feature switch.
 BOTLOG = sb(os.environ.get("BOTLOG", "True"))
 LOGSPAMMER = sb(os.environ.get("LOGSPAMMER", "False"))
+
+# Custom Pmpermit text
+PMPERMIT_TEXT = os.environ.get("PMPERMIT_TEXT", None)
 
 # Bleep Blop, this is a bot ;)
 PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN", "False"))
@@ -194,10 +200,27 @@ DEVS = (
 )
 
 
+# Blacklist User for use Hirosh-Userbot
+while 0 < 6:
+    _BLACKLIST = get(
+        "https://raw.githubusercontent.com/UserbotMaps/hiroblack/master/hiroblacklist.json"
+    )
+    if _BLACKLIST.status_code != 200:
+        if 0 != 5:
+            continue
+        hiroblacklist = []
+        break
+    hiroblacklist = _BLACKLIST.json()
+    break
+
+del _BLACKLIST
+
 # For Blacklist Group Hiroshi Support
 BLACKLIST_CHAT = os.environ.get("BLACKLIST_CHAT", None)
 if not BLACKLIST_CHAT:
     BLACKLIST_CHAT = [-1001556224947]
+
+
 
 # Default .alive Name
 ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
