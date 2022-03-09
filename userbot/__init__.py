@@ -199,7 +199,7 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
 YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
 
 # Untuk Perintah .rambot (alive)
-HIRO_TEKS_KOSTUM = os.environ.get("HIRO_TEKS_KOSTUM") or "ㅤ"
+VEGETA_TEKS_KOSTUM = os.environ.get("HIRO_TEKS_KOSTUM") or "ㅤ"
 
 # Untuk Melihat Repo
 REPO_NAME = os.environ.get("REPO_NAME") or "🔥Hiroshi-Userbot🔥"
