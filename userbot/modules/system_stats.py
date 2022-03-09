@@ -20,7 +20,7 @@ from userbot import (
    GROUP_LINK,
    BOT_VER, 
    CMD_HELP, 
-   VEGETA_TEKS_KOSTUM, 
+   HIRO_TEKS_KOSTUM, 
    IG_ALIVE, 
    REPO_NAME, 
    UPSTREAM_REPO_BRANCH, 
@@ -171,7 +171,7 @@ async def bot_ver(event):
         revout = str(stdout.decode().strip()) + str(stderr.decode().strip())
 
         await event.edit(
-            "**☛**HIROKI-UBOT Versi:** \n "
+            "**☛**HIROSHI-USERBOT Versi:** \n "
             f"{verout}"
             "\n**☛**Revisi:**\n "
             f"{revout}"
@@ -240,7 +240,7 @@ async def amireallyalive(alive):
     await asyncio.sleep(3)
     output = (
         f"**HIROKI-USERBOT{REPO_NAME}HIROKI-USERBOT** \n\n"
-        f"\n__**{VEGETA_TEKS_KOSTUM}**__\n"
+        f"\n__**{HIRO_TEKS_KOSTUM}**__\n"
         f"**▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰**\n"
         f"**👑 owner** \n"
         f" ➥ `{DEFAULTUSER}` \n"
@@ -253,7 +253,7 @@ async def amireallyalive(alive):
         f"┣• `📕 Modules  :`{len(modules)} \n"
         f"╰✠╼━━━━━━❖━━━━━━━✠╯\n"
         f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ \n"
-        f"[🌹𝙸𝙽𝚂𝚃𝙰𝙶𝚁𝙰𝙼🌹]({IG_ALIVE}) || [{REPO_NAME}](https://github.com/UserbotMaps/Hiroki-Userbot) || [𝐆𝐑𝐎𝐔𝐏]({GROUP_LINK}) \n"
+        f"[🌹𝙸𝙽𝚂𝚃𝙰𝙶𝚁𝙰𝙼🌹]({IG_ALIVE}) || [{REPO_NAME}](https://github.com/UserbotMaps/Hiroshi-Userbot) || [𝐆𝐑𝐎𝐔𝐏]({GROUP_LINK}) \n"
         f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰")
     if ALIVE_LOGO:
         try:
@@ -281,7 +281,7 @@ async def amireallyalive(alive):
     await get_readable_time((time.time() - StartTime))
     output = (
         f"**╭✠╼━━━━━━❖━━━━━━━✠╮**\n"
-        f"       **🌹HIROKI-USERBOT🌹** \n"
+        f"       **🌹HIROSHI-USERBOT🌹** \n"
         f"**╰✠╼━━━━━━❖━━━━━━━✠╯**\n"
         f"❃ **👑Owner**             ➥ `{DEFAULTUSER}` \n"
         f"❃ **🤠Username**    ➥ `@{user.username}` \n"
@@ -290,7 +290,7 @@ async def amireallyalive(alive):
         f"❃ **😎Versi Bot**      ➥ `9.1` \n"
         f"❃ **📕Modul**           ➥ `{len(modules)}` \n\n"
         f"**▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰**\n"
-        f"[{REPO_NAME}](https://github.com/UserbotMaps/Hiroki-Userbot) || [𝗚𝗥𝗢𝗨𝗣]({GROUP_LINK}) || [𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠]({IG_ALIVE})\n"
+        f"[{REPO_NAME}](https://github.com/UserbotMaps/Hiroshi-Userbot) || [𝗚𝗥𝗢𝗨𝗣]({GROUP_LINK}) || [𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠]({IG_ALIVE})\n"
         f"**▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ **")
     if ALIVE_LOGO:
         try:
@@ -322,7 +322,7 @@ async def amireallyalive(alive):
     await asyncio.sleep(3)
     output = (
         f"**✠╼━━━━━━❖━━━━━━━✠ ** \n"
-        f"**     🔥HIROKI-USERBOT🔥** \n"
+        f"**     🔥HIROSHI-USERBOT🔥** \n"
         f"**✠╼━━━━━━❖━━━━━━━✠** \n"
         f"**╭╼════════════════════╾╮** \n"
         f"**│  ⇱ **SISTEM ALIVE USERBOT** ⇲ \n"
@@ -335,7 +335,7 @@ async def amireallyalive(alive):
         f"**╟◈ 👾 **Bot Ver  :** v{BOT_VER} \n"
         f"**╟◈ 📂 **Plugins  :** {len(modules)} Plugin \n"
         f"**▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰**\n"
-        f"[{REPO_NAME}](https://github.com/UserbotMaps/Hiroki-Userbot) || [𝗚𝗥𝗢𝗨𝗣]({GROUP_LINK}) || [𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠]({IG_ALIVE})\n"
+        f"[{REPO_NAME}](https://github.com/UserbotMaps/Hiroshi-Userbot) || [𝗚𝗥𝗢𝗨𝗣]({GROUP_LINK}) || [𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠]({IG_ALIVE})\n"
         f"**▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ **")
     if ALIVE_LOGO:
         try:
@@ -374,19 +374,19 @@ async def amireallyalive(alive):
     await alive.edit("**Prossing** **Boostin**")
     await alive.edit("**Prossing** **Boosting**")
     await asyncio.sleep(1)
-    await alive.edit("**Prossing Boosting** **V**")
-    await alive.edit("**Prossing Boosting** **Ve**")
-    await alive.edit("**Prossing Boosting** **Veg**")
-    await alive.edit("**Prossing Boosting** **Veget**")
-    await alive.edit("**Prossing Boosting** **Vegeta**")
+    await alive.edit("**Prossing Boosting** **H**")
+    await alive.edit("**Prossing Boosting** **Hi**")
+    await alive.edit("**Prossing Boosting** **Hiro**")
+    await alive.edit("**Prossing Boosting** **Hiros**")
+    await alive.edit("**Prossing Boosting** **Hiroshi**")
     await asyncio.sleep(1)
-    await alive.edit("**Proses Boosting** **Vegeta U**")
-    await alive.edit("**Proses Boosting** **Vegeta Us**")
-    await alive.edit("**Proses Boosting** **Vegeta Use**")
-    await alive.edit("**Proses Boosting** **Vegeta User**")
-    await alive.edit("**Proses Boosting** **Vegeta Userb**")
-    await alive.edit("**Proses Boosting** **Vegeta Userbo**")
-    await alive.edit("**Proses Boosting** **Vegeta Userbot**")
+    await alive.edit("**Proses Boosting** **Hiroshi U**")
+    await alive.edit("**Proses Boosting** **Hiroshi Us**")
+    await alive.edit("**Proses Boosting** **Hiroshi Use**")
+    await alive.edit("**Proses Boosting** **Hiroshi User**")
+    await alive.edit("**Proses Boosting** **Hiroshi Userb**")
+    await alive.edit("**Proses Boosting** **Hiroshi Userbo**")
+    await alive.edit("**Proses Boosting** **Hiroshi Userbot**")
     await asyncio.sleep(1)
     await alive.edit("8✊===D")
     await alive.edit("8=✊==D")
@@ -409,7 +409,7 @@ async def amireallyalive(alive):
     await alive.edit("8✊===D")
     await asyncio.sleep(1)
     output = (
-        f"**🐼Vegeta Userbot is actived!🐼** \n\n"
+        f"**🐼Hiroshi Userbot is actived!🐼** \n\n"
         f"┣❏😎 **Master**: {DEFAULTUSER} \n"
         f"┣❏🧐 **Username**: **@{user.username}** \n"
         f"┣❏🐍 **Python**:  Versi {python_version()} \n"
@@ -417,7 +417,7 @@ async def amireallyalive(alive):
         f"┣❏📂 **Plugins**: {len(modules)} Plugins \n"
         f"┣❏🔮 **Telethon**: Versi {version.__version__} \n\n"
         f"🌸 SUPPORT [SUPPORT]({GROUP_LINK}) \n"
-        f"📍 REPO [HIROKI USERBOT](https://github.com/UserbotMaps/Hiroki-Userbot)\n")
+        f"📍 REPO [HIROSHI USERBOT](https://github.com/UserbotMaps/Hiroshi-Userbot)\n")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
