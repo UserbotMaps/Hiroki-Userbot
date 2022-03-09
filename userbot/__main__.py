@@ -28,13 +28,12 @@ except Exception as e:
     sys.exit(1)
 
 for module_name in ALL_MODULES:
-        imported_module = import_module("userbot.modules." + module_name)
+    imported_module = import_module("userbot.modules." + module_name)
 
-    LOGS.info(f"Jika {ALIVE_NAME} Membutuhkan Bantuan, Silahkan Tanyakan di Grup https://t.me/hiroshisupport")
-    LOGS.info(f"⚡Hiroshi-Userbot⚡ ⚙️ V{BOT_VER} [ TELAH DIAKTIFKAN! ]")
-except BaseException as e:
-    LOGS.info(str(e), exc_info=True)
-    sys.exit(1)
+LOGS.info(
+    f"Jika {ALIVE_NAME} Membutuhkan Bantuan, Silahkan Tanyakan di Grup https://t.me/hiroshisupport")
+LOGS.info(
+    f"🔥Hiroshi-Userbot🔥 ⚙️ V{BOT_VER} [TELAH DIAKTIFKAN!]")
 
 
 async def check_alive():
