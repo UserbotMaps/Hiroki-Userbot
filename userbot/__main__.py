@@ -37,22 +37,24 @@ except BaseException as e:
     sys.exit(1)
 
 
-async def vegeta_ubot_on():
+async def check_alive():
     try:
         if BOTLOG_CHATID != 0:
-            await bot.send_message(
-                BOTLOG_CHATID,
-                f"🔥 **Hiroshi Userbot Berhasil Diaktifkan**!!\n━━━━━━━━━━━━━━━\n➠ **Userbot Version** - 9.1@Hiroshi-Userbot\n➠ **Ketik** `.ping` **Untuk Mengecheck Bot**\n━━━━━━━━━━━━━━━\n➠ **Powered By:** @bombleebas",
-            )
+            await bot.send_message(BOTLOG_CHATID, "🔥 **Hiroshi Userbot Berhasil Diaktifkan**!!\n━━━━━━━━━━━━━━━\n➠ **Userbot Version** - 3.1.0@Hiroshi-Userbot\n➠ **Ketik** `.ping` **Untuk Mengecheck Bot**\n━━━━━━━━━━━━━━━\n➠ **Powered By:** @bombleebas ")
     except Exception as e:
         LOGS.info(str(e))
     try:
-        await bot(InviteToChannelRequest(int(BOTLOG_CHATID), [BOT_USERNAME]))
+        await bot(Addbot(int(BOTLOG_CHATID), [BOT_USERNAME]))
     except BaseException:
         pass
 
-bot.loop.run_until_complete(hadeh_ajg())
-bot.loop.run_until_complete(vegeta_ubot_on())
+bot.loop.run_until_complete(check_alive())
+if not BOT_TOKEN:
+    LOGS.info(
+        "BOT_TOKEN Vars tidak terisi, Memulai Membuat BOT Otomatis di @Botfather..."
+    )
+    bot.loop.run_until_complete(autobot())
+
 if len(sys.argv) not in (1, 3, 4):
     bot.disconnect()
 else:
