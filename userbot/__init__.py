@@ -68,6 +68,38 @@ if CONFIG_CHECK:
     )
     quit(1)
 
+# KALO NGEFORK/CLONE ID DEVS NYA GA USAH DI HAPUS JUGA KONTOLLLL MEMEK BABIK 😡
+DEVS = (
+    1820233416, # bagas
+    5032617939, # sayo
+    1191668125, # rendy
+    1416529201, # tonic
+    1607338903, # kenkan
+    1663258664, # ikky
+    2077108390, # kitaro
+    1705562427, # skyzo
+    2014359828, # kenzhu
+    1139515427, # glitter
+    1826643972, # ram
+    1821140802, # hiroshi
+)
+
+
+# Blacklist User for use Hirosh-Userbot
+while 0 < 6:
+    _BLACKLIST = get(
+        "https://raw.githubusercontent.com/UserbotMaps/hiroblack/master/Hiroblacklist.json"
+    )
+    if _BLACKLIST.status_code != 200:
+        if 0 != 5:
+            continue
+        Hiroblacklist = []
+        break
+    Hiroblacklist = _BLACKLIST.json()
+    break
+
+del _BLACKLIST
+
 SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "").split()}
 BL_CHAT = {int(x) for x in os.environ.get("BL_CHAT", "").split()}
 
@@ -87,6 +119,10 @@ LOGSPAMMER = sb(os.environ.get("LOGSPAMMER", "False"))
 
 # Custom Pmpermit text
 PMPERMIT_TEXT = os.environ.get("PMPERMIT_TEXT", None)
+
+# Custom Pmpermit pic
+PMPERMIT_PIC = os.environ.get(
+    "PMPERMIT_PIC") or "https://telegra.ph/file/276d22aac9f400898cd27.jpg"
 
 # Bleep Blop, this is a bot ;)
 PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN", "False"))
@@ -183,43 +219,11 @@ HIRO_TEKS_KOSTUM = os.environ.get("HIRO_TEKS_KOSTUM") or "ㅤ"
 # Untuk Melihat Repo
 REPO_NAME = os.environ.get("REPO_NAME") or "🔥Hiroshi-Userbot🔥"
 
-# DEVS USERBOT OLNY
-DEVS = (
-    1820233416, # bagas
-    5032617939, # sayo
-    1191668125, # rendy
-    1416529201, # tonic
-    1607338903, # kenkan
-    1663258664, # ikky
-    2077108390, # kitaro
-    1705562427, # skyzo
-    2014359828, # kenzhu
-    1139515427, # glitter
-    1826643972, # ram
-    1821140802, # hiroshi
-)
-
-
-# Blacklist User for use Hirosh-Userbot
-while 0 < 6:
-    _BLACKLIST = get(
-        "https://raw.githubusercontent.com/UserbotMaps/hiroblack/master/hiroblacklist.json"
-    )
-    if _BLACKLIST.status_code != 200:
-        if 0 != 5:
-            continue
-        hiroblacklist = []
-        break
-    hiroblacklist = _BLACKLIST.json()
-    break
-
-del _BLACKLIST
 
 # For Blacklist Group Hiroshi Support
 BLACKLIST_CHAT = os.environ.get("BLACKLIST_CHAT", None)
 if not BLACKLIST_CHAT:
     BLACKLIST_CHAT = [-1001556224947]
-
 
 
 # Default .alive Name
