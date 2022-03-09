@@ -52,8 +52,8 @@ if not BOT_TOKEN:
     LOGS.info(
         "BOT_TOKEN Vars tidak terisi, Memulai Membuat BOT Otomatis di @Botfather..."
     )
-    bot.loop.run_until_complete(autobot())
-
+    bot.loop.run_until_complete(hadeh_ajg())
+bot.loop.run_until_complete(vegeta_ubot_on())
 if len(sys.argv) not in (1, 3, 4):
     bot.disconnect()
 else:
