@@ -36,7 +36,7 @@ LOGS.info(
     f"🔥Hiroshi-Userbot🔥 ⚙️ V{BOT_VER} [TELAH DIAKTIFKAN!]")
 
 
-async def check_alive():
+async def vegeta_ubot_on()::
     try:
         if BOTLOG_CHATID != 0:
             await bot.send_message(BOTLOG_CHATID, "🔥 **Hiroshi Userbot Berhasil Diaktifkan**!!\n━━━━━━━━━━━━━━━\n➠ **Userbot Version** - 3.1.0@Hiroshi-Userbot\n➠ **Ketik** `.ping` **Untuk Mengecheck Bot**\n━━━━━━━━━━━━━━━\n➠ **Powered By:** @bombleebas ")
